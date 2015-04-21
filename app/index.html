@@ -2,107 +2,183 @@
 <html class="no-js" lang="">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>bootstrap less2 Alberto</title>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<title>Gran Gourmet Menés</title>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="icon" type="image/png" href="/img/favicon.jpg" />
+	<!-- build:css styles/vendor.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- endbuild -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower|Over+the+Rainbow' rel='stylesheet' type='text/css'>
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+	<!-- build:js scripts/vendor/modernizr.js -->
+	<script src="../bower_components/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
 </head>
 
 <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+	<div class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<span id="logo">Gran Gourmet Menés</span>
+				</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="index.html">Inicio</a>
+					</li>
 
-    <!-- Standard button -->
-    <button type="button" class="btn btn-default">Default</button>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios
+                            <b class="caret"></b>
+                        </a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="comida.html">Comida</a>
+							</li>
+							<li>
+								<a href="bebida.html">Bebidas</a>
+							</li>
+						</ul>
+					</li>
 
-    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-    <button type="button" class="btn btn-primary">Primary</button>
+					<li>
+						<a href="video.html">Video</a>
+					</li>
+					<li>
+						<a href="contactar.html">Contacto</a>
+					</li>
 
-    <!-- Indicates a successful or positive action -->
-    <button type="button" class="btn btn-success">Success</button>
+				</ul>
 
-    <!-- Contextual button for informational alert messages -->
-    <button type="button" class="btn btn-info">Info</button>
-
-    <!-- Indicates caution should be taken with this action -->
-    <button type="button" class="btn btn-warning">Warning</button>
-
-    <!-- Indicates a dangerous or potentially negative action -->
-    <button type="button" class="btn btn-danger">Danger</button>
-
-    <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-    <button type="button" class="btn btn-link">Link</button>
-
-    <div class="hero-unit">
-        <h1>'Allo, 'Allo!</h1>
-        <p>You now have</p>
-        <ul>
-            <li>HTML5 Boilerplate</li>
-            <li>Sass</li>
-            <li>Modernizr</li>
-        </ul>
-    </div>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-    (function(b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function() {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = '//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-    </script>
+			</div>
+			<!--/.navbar-collapse -->
+		</div>
+	</div>
 
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+	<div class="container" align="center">
+		<h1>Gran Gourmet Menés</h1>
 
-    <!-- build:js scripts/plugins.js -->
-    <script src="../bower_components/bootstrap/js/affix.js"></script>
-    <script src="../bower_components/bootstrap/js/alert.js"></script>
-    <script src="../bower_components/bootstrap/js/dropdown.js"></script>
-    <script src="../bower_components/bootstrap/js/tooltip.js"></script>
-    <script src="../bower_components/bootstrap/js/modal.js"></script>
-    <script src="../bower_components/bootstrap/js/transition.js"></script>
-    <script src="../bower_components/bootstrap/js/button.js"></script>
-    <script src="../bower_components/bootstrap/js/popover.js"></script>
-    <script src="../bower_components/bootstrap/js/carousel.js"></script>
-    <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
-    <script src="../bower_components/bootstrap/js/collapse.js"></script>
-    <script src="../bower_components/bootstrap/js/tab.js"></script>
-    <!-- endbuild -->
+		<div class="row">
+			<div class="container">
+				<div id="carousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+						<li data-target="#carousel" data-slide-to="2"></li>
+						<li data-target="#carousel" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner" width="500" height="300">
+						<div class="item active">
+							<img src="img/tienda1.jpg" alt="1">
+						</div>
+						<div class="item">
+							<img src="img/tienda2.jpg" alt="2">
+						</div>
+						<div class="item">
+							<img src="img/tienda3.jpg" alt="3">
+						</div>
+						<div class="item">
+							<img src="img/tienda4.jpg" alt="4">
+						</div>
+					</div>
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Gran Gourmet Menés</h2>
+				<p>El <strong>Gran Gourmet Menés,</strong> además de tienda online, es un lugar de encuentro para <strong>compartir experiencias.</strong> Creemos que el mundo gourmet es demasiado exclusivo, y que <strong>la gastronomía debe ser ante todo aventura. </strong>Buscar, probar, disfrutar y sorprender. <strong>¡Apúntate!</strong></p>
+				<p>El <strong> Gran Gourmet </strong>es también una tienda real, con gente real, rodeada de simpáticos amantes de la gastronomía. Buscamos sin descanso nuevos tesoros y manjares de nuestra tierra y alrededores, para descubrir y vivir experiencias gastronómicas.</p>
+				<p>En la tienda, además<strong> te ayudamos a acertar con tus regalos gastronómicos: </strong>regalos personalizados que van más allá del propio detalle, regalos emocionantes que dejan huella con los cinco sentidos.</p>
+				<p><strong>¡Disfruta y descubre El Gran Gourmet!<strong>
+				</p>
+				<hr><br><br>
+			</div>
+		</div>
+	</div>
+
+	<!-- /container -->
+
+	<footer>
+		<div class="container">
+			<ul>
+				<li class="social-icons googleplus">
+					<a href="#"></a>
+				</li>
+				<li class="social-icons facebook">
+					<a href="#"></a>
+				</li>
+				<li class="social-icons youtube">
+					<a href="#"></a>
+				</li>
+				<li class="social-icons share">
+					<a href="#"></a>
+				</li>
+				<li class="social-icons rss">
+					<a href="#"></a>
+				</li>
+			</ul>
+			<p class="pull-right">Copyright @ 2015 | Website realizada por
+				<a href="#">Alberto Menés Gonzalo</a>
+			</p>
+		</div>
+
+	</footer>
+
+
+	<!-- build:js scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:js scripts/plugins.js -->
+	<script src="../bower_components/bootstrap/js/affix.js"></script>
+	<script src="../bower_components/bootstrap/js/alert.js"></script>
+	<script src="../bower_components/bootstrap/js/dropdown.js"></script>
+	<script src="../bower_components/bootstrap/js/tooltip.js"></script>
+	<script src="../bower_components/bootstrap/js/modal.js"></script>
+	<script src="../bower_components/bootstrap/js/transition.js"></script>
+	<script src="../bower_components/bootstrap/js/button.js"></script>
+	<script src="../bower_components/bootstrap/js/popover.js"></script>
+	<script src="../bower_components/bootstrap/js/carousel.js"></script>
+	<script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+	<script src="../bower_components/bootstrap/js/collapse.js"></script>
+	<script src="../bower_components/bootstrap/js/tab.js"></script>
+	<!-- endbuild -->
 
 
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+	<!-- build:js scripts/main.js -->
+	<script src="scripts/main.js"></script>
+	<!-- endbuild -->
 </body>
 
 </html>
