@@ -4,7 +4,7 @@
 Times,
 serif;
 @font-family-base: @font-family-serif;
-@font-size-base: 20px;
+@font-size-base: 16px;
 @navbar-inverse-color: lighten(@gray-light,
 15%);
 @navbar-inverse-bg: #4e6a82;
@@ -24,53 +24,160 @@ serif;
 @brand-primary: darken(grey,
 6.5%);
 html {
-    position: relative;
-    min-height: 100%;
+	position: relative;
+	min-height: 100%;
 }
 
 body {
-    /* Margin bottom by footer height */
-    
-    padding-bottom: 60px;
+	/* Margin bottom by footer height */
+	
+	padding-bottom: 60px;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    
-    height: 60px;
-    color: @gray-dark;
-    background-color: #f5f5f5;
-    ul{padding: 0px;}
-    .social-icons {
-        float: left;
-        list-style: none;
-    }
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	
+	height: 60px;
+	color: @gray-dark;
+	background-color: #f5f5f5;
+	ul {
+		padding: 0px;
+	}
+	.social-icons {
+		float: left;
+		list-style: none;
+	}
 }
 
-.oculto { 
-	display:none;
-	link:trasnsparent;
+.oculto {
+	display: none;
+	link: trasnsparent;
+}
+/*Iconos para redes sociales, mediante un sprite*/
+
+.social-icons {
+	background: transparent url('../img/sprites.png') no-repeat;
+	list-style: none;
+	float: left;
+	text-indent: -9999px;
+}
+
+.digg {
+	width: 72px;
+	height: 72px;
+	background-position: 0 0;
+}
+
+.dribbble {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -73px;
+}
+
+.email {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -146px;
+}
+
+.facebook {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -219px;
+}
+
+.flickr {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -292px;
+}
+
+.forrst {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -365px;
+}
+
+.googleplus {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -438px;
+}
+
+.linkedin {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -511px;
+}
+
+.pinterest {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -584px;
+}
+
+.rss {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -657px;
+}
+
+.share {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -730px;
+}
+
+.skype {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -803px;
+}
+
+.tumblr {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -876px;
+}
+
+.twitter {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -949px;
+}
+
+.youtube {
+	width: 72px;
+	height: 72px;
+	background-position: 0 -1022px;
+}
+
+@media screen and (max-width: 399px) {
+	.big {
+		display: none;
+
+	}
+	.skype{display: none;}
+	.twitter{display: none;}
 	
 }
 
-/*Iconos para redes sociales, mediante un sprite*/
-.social-icons { background: transparent url('../img/sprites.png') no-repeat; list-style:none;float:left;text-indent: -9999px;}
-.digg { width: 72px; height: 72px; background-position: 0 0; }
-.dribbble { width: 72px; height: 72px; background-position: 0 -73px; }
-.email { width: 72px; height: 72px; background-position: 0 -146px; }
-.facebook { width: 72px; height: 72px; background-position: 0 -219px; }
-.flickr { width: 72px; height: 72px; background-position: 0 -292px; }
-.forrst { width: 72px; height: 72px; background-position: 0 -365px; }
-.googleplus { width: 72px; height: 72px; background-position: 0 -438px; }
-.linkedin { width: 72px; height: 72px; background-position: 0 -511px; }
-.pinterest { width: 72px; height: 72px; background-position: 0 -584px; }
-.rss { width: 72px; height: 72px; background-position: 0 -657px; }
-.share { width: 72px; height: 72px; background-position: 0 -730px; }
-.skype { width: 72px; height: 72px; background-position: 0 -803px; }
-.tumblr { width: 72px; height: 72px; background-position: 0 -876px; }
-.twitter { width: 72px; height: 72px; background-position: 0 -949px; }
-.youtube { width: 72px; height: 72px; background-position: 0 -1022px; }
+@media and screen (min-width: 400px) and (max-width: 900px) {
+	.nano {
+		display: none;
 
+	}
+}
+
+@media print {
+	* {
+		font-family: arial
+	}
+	.body {
+		background-color: white;
+		font-size: 10px;
+	}
+}
