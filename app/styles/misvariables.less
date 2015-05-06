@@ -23,6 +23,7 @@ serif;
 @text-color: black;
 @brand-primary: darken(grey,
 6.5%);
+
 html {
 	position: relative;
 	min-height: 100%;
@@ -42,7 +43,7 @@ footer {
 	
 	height: 60px;
 	color: @gray-dark;
-	background-color: #f5f5f5;
+	background-color: #fcf7cd;
 	ul {
 		padding: 0px;
 	}
@@ -56,6 +57,30 @@ footer {
 	display: none;
 	link: trasnsparent;
 }
+
+p{
+text-align:justify;
+}
+
+#punto{
+list-style:none;
+}
+
+li{
+list-style:none;
+}
+
+h4{
+text-align: center;
+//text-decoration: underline;
+	font-style: italic;
+	background-color: orange;
+}
+
+.white{
+background:white;
+}
+
 /*Iconos para redes sociales, mediante un sprite*/
 
 .social-icons {
@@ -155,22 +180,64 @@ footer {
 	background-position: 0 -1022px;
 }
 
-@media screen and (max-width: 399px) {
-	.big {
+@media only screen and (max-width: 450px) {
+	.peque {
 		display: none;
-
 	}
-	.skype{display: none;}
-	.twitter{display: none;}
-	
-}
-
-@media and screen (min-width: 400px) and (max-width: 900px) {
+	.grande {
+		display: none;
+	}
+	.mediano {
+		display: inline;
+	}
 	.nano {
 		display: none;
-
+	}
+	.skype {
+		display: none;
+	}
+	.twitter {
+		display: none;
 	}
 }
+
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+	.peque {
+		display: inline;
+	}
+	.grande {
+		display: none;
+	}
+	.mediano {
+		display: none;
+	}
+	.nano {
+		display: inline;
+	}
+	.twitter {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.peque {
+		display: none;
+	}
+	.grande {
+		display: inline;
+	}
+	.mediano {
+		display: none;
+	}
+	.nano {
+		display: inline;
+	}
+}
+
+//nano: 3 imagenes
+//peque: mapa.jpg y texto
+//mediano: imagen.jpg
+//grande: frame y horario.jpg
 
 @media print {
 	* {
